@@ -1,0 +1,26 @@
+﻿<Window x:Class="Baseapp.AddWordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Baseapp"
+        mc:Ignorable="d"
+        Title="AddWordWindow" Height="450" Width="800" Background="#FF525252">
+
+    <Window.Resources>
+        <sys:String x:Key="LanguageTitle">Languages:</sys:String>
+
+        <x:Array x:Key="LanguageNames" Type="sys:String">
+            <sys:String>English</sys:String>
+            <sys:String>German</sys:String>
+            <sys:String>Korean</sys:String>
+        </x:Array>
+    </Window.Resources>
+
+    <StackPanel Margin="10">
+        <Label Content="{StaticResource LanguageTitle}"/>
+        <ComboBox ItemsSource="{StaticResource LanguageNames}" />
+    </StackPanel>
+    
+</Window>
