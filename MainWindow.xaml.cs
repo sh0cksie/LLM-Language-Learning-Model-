@@ -1,5 +1,4 @@
-﻿using Baseapp.Resources;
-using System.Text;
+﻿using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -21,19 +20,34 @@ namespace Baseapp
         {
             InitializeComponent();
             MainFrame.Navigate(new MainPage());
+
+            Loaded += MainWindow_Loaded;
         }
 
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (!Properties.Settings.Default.IsFirstLaunch)
+            {
+                FirstLaunchWindow firstLaunchWindow = new FirstLaunchWindow();
+                firstLaunchWindow.Owner = this;
+                bool? result = firstLaunchWindow.ShowDialog();
+
+                if (result == true)
+                {
+                    Properties.Settings.Default.IsFirstLaunch = true;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
+        }
 
         private void PopUP(object sender, RoutedEventArgs e)
         {
             AddWordWindow addWindow1 = new AddWordWindow();
             addWindow1.Show();
-        }
-
-        private void TamirPopUp(object sender, RoutedEventArgs e)
-        {
-            TamirWindow addWindow2 = new TamirWindow();
-            addWindow2.Show();
         }
     }
 }

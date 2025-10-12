@@ -24,6 +24,5 @@
             </Setter>
             <Setter Property="Background" Value="{x:Null}"/>
         </Style>
-        
     </Application.Resources>
 </Application>
