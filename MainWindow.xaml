@@ -11,8 +11,8 @@
         <StackPanel HorizontalAlignment="Left" Width="158" Background="#FF525252">
             <Button x:Name="AddWordButton" Content="Add word" Click="PopUP" BorderThickness="5" Height="49" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.51,0.546" Margin="0,50,0,0"/>
         </StackPanel>
-        <Border CornerRadius="10" BorderBrush="Black" BorderThickness="1" Background="black" Margin="158,10,10,10">
-            <Frame Content="Frame" Margin="0,0,0,0" x:Name="MainFrame"/>
+        <Border CornerRadius="10" BorderBrush="#202020" BorderThickness="1" Background="#202020" Margin="158,10,10,10">
+   
         </Border>
     </Grid>
 </Window>

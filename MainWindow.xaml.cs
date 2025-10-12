@@ -19,8 +19,6 @@ namespace Baseapp
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new MainPage());
-
             Loaded += MainWindow_Loaded;
         }
 
@@ -47,7 +45,7 @@ namespace Baseapp
         private void PopUP(object sender, RoutedEventArgs e)
         {
             AddWordWindow addWindow1 = new AddWordWindow();
-            addWindow1.Show();
+            addWindow1.ShowDialog();
         }
     }
 }

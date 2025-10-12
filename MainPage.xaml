@@ -10,8 +10,6 @@
       Title="MainPage">
 
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Resources/airfryer.jpg" Stretch="Uniform" />
-        </Grid.Background>
+      
     </Grid>
 </Page>
