@@ -23,20 +23,17 @@ namespace Baseapp
         public MainPage()
         {
             InitializeComponent();
-            List<Card> cards = new List<Card>();
-            cards.Add(new Card());
-            cards.Add(new Card());
-            cards.Add(new Card());
-            cards.Add(new Card());
-            cards.Add(new Card());
-            AddCard(cards);
+
+            Deck deck = new Deck("tempdeck.csv");
+
+            AddCard(deck.Cards);
         }
 
         public void AddCard(List<Card> _cards)
         {
             foreach (Card _card in _cards)
             {
-                CardPanel.Children.Add(_card);
+                CardPanel.Children.Add(new CardControl(_card.Front, _card.Back));
             }
         }
     }

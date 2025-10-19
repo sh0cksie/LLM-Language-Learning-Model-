@@ -11,7 +11,7 @@
     <Border CornerRadius="10" Background="AliceBlue">
         <WrapPanel x:Name="CardPanel" Orientation="Horizontal" Margin="10">
             <WrapPanel.Resources>
-                <Style TargetType="{x:Type local:Card}">
+                <Style TargetType="{x:Type local:CardControl}">
                     <Setter Property="Margin" Value="5,5" />
                 </Style>
             </WrapPanel.Resources>

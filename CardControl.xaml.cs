@@ -18,11 +18,17 @@ namespace Baseapp
     /// <summary>
     /// Interaction logic for CardPage.xaml
     /// </summary>
-    public partial class Card : UserControl
+    public partial class CardControl : UserControl
     {
-        public Card()
+        public CardControl()
         {
             InitializeComponent();
+        }
+        public CardControl(string text1, string text2)
+        {
+            InitializeComponent();
+            TextBlock1.Text = text1;
+            TextBlock2.Text = text2;
         }
     }
 }
