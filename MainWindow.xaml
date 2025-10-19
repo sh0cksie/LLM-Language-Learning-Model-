@@ -11,15 +11,15 @@
         ResizeMode="CanResize" 
         AllowsTransparency="True" 
         ScrollViewer.VerticalScrollBarVisibility="Auto">
-    <Border BorderBrush="Gray" BorderThickness="2" CornerRadius="10" Background="#FF525252">
+    <Border BorderBrush="#FF525252" BorderThickness="2" CornerRadius="10" Background="#FF525252">
         <DockPanel>
             <Border DockPanel.Dock="Top" CornerRadius="10" Background="#FF404040">
                 <Grid Height="30" MouseDown="TitleBar_MouseDown">
                     <TextBlock Text="LLM" VerticalAlignment="Center" Margin="10,0" Foreground="White"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                        <Button Content="_" BorderBrush="Transparent" Width="40" Click="MinimizeButton_Click" />
-                        <Button Content="⬜" BorderBrush="Transparent" Width="40" Click="MaximizeButton_Click" />
-                        <Button Content="X" BorderBrush="Transparent" Width="40" Click="CloseButton_Click" />
+                        <Button Content="_" BorderBrush="Transparent" Foreground="White" Width="40" Click="MinimizeButton_Click" />
+                        <Button Content="⬜" BorderBrush="Transparent" Foreground="White" Width="40" Click="MaximizeButton_Click" />
+                        <Button Content="X" BorderBrush="Transparent" Foreground="White" Width="40" Click="CloseButton_Click" />
                     </StackPanel>
                 </Grid>
             </Border>

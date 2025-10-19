@@ -23,6 +23,21 @@ namespace Baseapp
         public MainPage()
         {
             InitializeComponent();
+            List<Card> cards = new List<Card>();
+            cards.Add(new Card());
+            cards.Add(new Card());
+            cards.Add(new Card());
+            cards.Add(new Card());
+            cards.Add(new Card());
+            AddCard(cards);
+        }
+
+        public void AddCard(List<Card> _cards)
+        {
+            foreach (Card _card in _cards)
+            {
+                CardPanel.Children.Add(_card);
+            }
         }
     }
 }

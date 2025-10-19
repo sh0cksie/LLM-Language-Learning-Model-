@@ -9,8 +9,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
     <Border CornerRadius="10" Background="AliceBlue">
-        <Grid>
-            
-        </Grid>
+        <WrapPanel x:Name="CardPanel" Orientation="Horizontal" Margin="10">
+            <WrapPanel.Resources>
+                <Style TargetType="{x:Type local:Card}">
+                    <Setter Property="Margin" Value="5,5" />
+                </Style>
+            </WrapPanel.Resources>
+        </WrapPanel>
     </Border>
 </Page>

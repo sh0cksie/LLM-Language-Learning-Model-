@@ -13,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Card
+namespace Baseapp
 {
     /// <summary>
     /// Interaction logic for CardPage.xaml
     /// </summary>
-    public partial class CardPage : Page
+    public partial class Card : UserControl
     {
-        public CardPage()
+        public Card()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
         }
     }
 }
