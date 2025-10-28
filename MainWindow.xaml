@@ -5,25 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Baseapp"
         mc:Ignorable="d"
-        Height="450" Width="800"
-        Background="Transparent"
-        WindowStyle="None" 
-        ResizeMode="CanResize" 
-        AllowsTransparency="True" 
-        ScrollViewer.VerticalScrollBarVisibility="Auto">
-    <Border BorderBrush="#FF525252" BorderThickness="2" CornerRadius="10" Background="#FF525252">
+        Height="450" Width="800">
+    <Border BorderBrush="#FF525252" BorderThickness="2" Background="#FF525252">
         <DockPanel>
-            <Border DockPanel.Dock="Top" CornerRadius="10" Background="#FF404040">
-                <Grid Height="30" MouseDown="TitleBar_MouseDown">
-                    <TextBlock Text="LLM" VerticalAlignment="Center" Margin="10,0" Foreground="White"/>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                        <Button Content="_" BorderBrush="Transparent" Foreground="White" Width="40" Click="MinimizeButton_Click" />
-                        <Button Content="⬜" BorderBrush="Transparent" Foreground="White" Width="40" Click="MaximizeButton_Click" />
-                        <Button Content="X" BorderBrush="Transparent" Foreground="White" Width="40" Click="CloseButton_Click" />
-                    </StackPanel>
-                </Grid>
-            </Border>
-
             <Border DockPanel.Dock="Top" CornerRadius="0,0,10,10" Background="#FF525252">
                 <Grid>
                     <StackPanel HorizontalAlignment="Left" Width="158" Background="Transparent">
